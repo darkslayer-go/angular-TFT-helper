@@ -1,0 +1,4 @@
+<div>
+  <app-items-list [canDelete]=true [itemList]="clickedItemList"></app-items-list>
+  <app-items-list (eClickedItemList)="getClickedItemList($event)"></app-items-list>
+</div>

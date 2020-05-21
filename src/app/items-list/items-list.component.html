@@ -1,0 +1,5 @@
+<div class="d-flex justify-content-center">
+  <ng-container *ngFor="let item of itemList">
+    <app-item (eClickedItem)="handleClickedItem($event)" (click)="sendClickedItemList()" [item]="item"></app-item>
+  </ng-container>
+</div>
